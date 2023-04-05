@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 
 module.exports = {
-	mode: 'development',
+	mode: 'none',
 	entry: './src/index.tsx',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
