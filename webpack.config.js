@@ -27,7 +27,9 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
 		}),
-		new Dotenv(),
+		new Dotenv({
+			systemvars: true,
+		}),
 	],
 	resolve: {
 		modules: ['node_modules', path.resolve(__dirname, 'src')],
