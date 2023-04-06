@@ -1,6 +1,6 @@
 export type Filter = {
 	platform: string
-	genre?: string
+	category?: string
 	tag?: string
 	sortBy: string
 }

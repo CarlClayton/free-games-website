@@ -9,6 +9,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].[contenthash].bundle.js',
 		assetModuleFilename: 'assets/[name].[hash].[ext]',
+		publicPath: '/',
 	},
 	module: {
 		rules: [
@@ -40,6 +41,7 @@ module.exports = {
 	target: 'web',
 	devServer: {
 		static: path.join(__dirname, 'dist'),
+		historyApiFallback: true,
 		port: 3000,
 		compress: true,
 		hot: true,

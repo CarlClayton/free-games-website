@@ -18,9 +18,9 @@ const GameFilter = ({ onChange }: Props): ReactElement => (
 			</Select>
 		</Label>
 
-		<Label htmlFor="genre-select">
-			Genre:
-			<Select name="genre" id="genre-select">
+		<Label htmlFor="category-select">
+			Category:
+			<Select name="category" id="category-select">
 				<option value="">All Genres</option>
 				{GENRES.map(genre => (
 					<option key={genre.value} value={genre.value}>
